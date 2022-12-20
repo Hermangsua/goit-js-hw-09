@@ -1,13 +1,13 @@
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
-chooseDate = document.querySelector('#datetime-picker');
-btnStart = document.querySelector(`button[data-start]`);
-daysText = document.querySelector(`span[data-days]`);
-hoursText = document.querySelector(`span[data-hours]`);
-minutesText = document.querySelector(`span[data-minutes]`);
-secondsText = document.querySelector(`span[data-seconds]`);
-divTimer = document.querySelector(`.timer`);
-divField = document.querySelectorAll(`.field`);
+const chooseDate = document.querySelector('#datetime-picker');
+const btnStart = document.querySelector(`button[data-start]`);
+const daysText = document.querySelector(`span[data-days]`);
+const hoursText = document.querySelector(`span[data-hours]`);
+const minutesText = document.querySelector(`span[data-minutes]`);
+const secondsText = document.querySelector(`span[data-seconds]`);
+const divTimer = document.querySelector(`.timer`);
+const divField = document.querySelectorAll(`.field`);
 // console.log(divField[0]);
 // styles
 for (const field of divField) {
