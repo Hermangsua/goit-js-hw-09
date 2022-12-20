@@ -71,7 +71,7 @@ btnStart.addEventListener('click', evnt => {
     const countDownTimer = new Date(chooseDate.value) - new Date();
     // console.log(countDownTimer);
     if (countDownTimer >= 0) {
-      const timeDiffObject = convertMs(countDownTimer);
+      let timeDiffObject = convertMs(countDownTimer);
       // console.log(timeDiffObject);
       daysText.textContent = addLeadingZero(timeDiffObject.days);
       hoursText.textContent = addLeadingZero(timeDiffObject.hours);
