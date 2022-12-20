@@ -3,12 +3,13 @@ const btnStart = document.querySelector('button[data-start]');
 const btnStop = document.querySelector('button[data-stop]');
 // console.log(btnStop);
 btnStop.disabled = true;
-timerId = null;
+
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 // console.log(getRandomHexColor());
 btnStart.addEventListener('click', event => {
+  timerId = null;
   btnStart.disabled = true;
   btnStop.disabled = false;
   timerId = setInterval(() => {
